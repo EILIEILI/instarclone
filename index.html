@@ -2,19 +2,55 @@
 <html lang="en">
 	<head>
 		<title>Instaclone</title>
+		<link
+		href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		rel="stylesheet">
 	</head>
 	<body>
-		<main class="LogIn">
-			<div class="LogIn__column">
-				<img class="LogIn__Phone-Image" />
+		<main class="Login">
+			<div class="Login__column">
+				<img class="Login__Phone-Image" src="phoneImage/Phone-Image.png" />
 			</div>
-			<section class="LogIn__column">
-			<div>
-				<div></div>
-
-				</div>
-			<div></div>
-			<div></div>
+			<section class="Login__column">
+				<div class="Login Section">
+					<div class="Login__Logo-Container">
+						<img class="Login__Logo" src="phoneimage/logo.png">
+					</div>
+			<form class="Login__Input">
+				<input 
+					type="text"
+				 	placeholder="Username"
+				 	required
+				 	class="Login__Input" 
+				 	/>
+				<input
+					type="text" 
+					placeholder="Password" 
+					required
+					class="Login__Input" 
+					/>
+				<a href="http://google.com">Forgot?</a>
+				<input 
+					type="submit"
+					value="Log in"
+					class="Login__Input Login__Input--Btn" 
+					/>
+			</form>
+			<span class="Login__Form-Dvider">or</span>
+			<a href="http://facebook.com" class="Login__Fb-Link">
+				<i class="fa fa-facebook-square" aria-hidden="true"></i>
+			LogIn with Facebook</a>
+			</div>
+			<div class="Login Section">
+				<span class="Login__Text">Don't you have account??</span>
+				<a href="#" class="Login__Link">Sign Up</a>
+			</div>
+			<div class="LogIn__Section Login__Section--Transparent">
+				<span class="Login__Text">Get the app</span>
+			</div>
+			<div class="Login_Appstores">
+			<img src="phoneImage/ios.png" class="Login_Appstore" />
+			<img src="phoneImage/android.png" class="Login_Appstore" />
 			</section>	
 		</main>
 		<footer>
