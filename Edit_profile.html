@@ -5,12 +5,13 @@
 		<link
 		href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		rel="stylesheet">
-	</head>
+		<link type="text/css" rel="stylesheet" href="root.css" />
+</head>
 	<body>
 		<nav class="Navigation">
 			<div class="Navigation__Column">
-				<a href="feed.html">
-				<img src="phoneimage/headerlogo.png">
+				<a href="feed.html" class="Navigation__Logo-Container">
+				<img src="phoneimage/headerlogo.png" class="Navigation__Logo" />
 				</a>
 			</div>
 			<div class="Navigation__Column">
@@ -24,12 +25,10 @@
 			<div class="Navigation__Column">
 				<a href="explore.html" class="Navigation__Icon">
 					<i class="fa fa-compass"></i>
-			</div>
-			<div class="Navigation__Column">
-				<a href="#" class="Navigation__Icon">
+				 </a>
+				 <a href="#" class="Navigation__Icon">
 					<i class="fa fa-heart-o"></i>
-					</div>
-			<div class="Navigatio__Column">
+				 </a>
 				<a href="profile.html" class="Navigation__Icon">
 				<i class="fa fa-user-circle-o"></i>
 				</a>
@@ -38,11 +37,90 @@
 		<main class="Edit_Profile">
 			<header class="Edit-Profile__Header">
 				<div class="Edit-Profile__Avatar-Container">
-					<img src="phoneimage/my.jpg" />
+					<img src="phoneimage/my.jpg" class="Edit-Profile__Avatar" />
 				</div>
-			 <h1 class="Edit-Profile__Form-Row">JangSeokHo</h1>
-			 
+			 <h1 class="Edit-Profile__Title">JangSeokHo</h1>
 			</header>
+		<form action="" class="Edit-Profile__Form">
+			<div class="Edit-Profile__Form-Row">
+				<div class="Edit-Profile__Label-Container">
+					<label for="name" class="Edit-Profile__Label">Name</label>
+				</div>
+			<div class="Edit-Profile__Input-Container">
+					<input id="name" type="text" class="Edit-Profile__Input">
+				</div>
+			</div>
+			<div class="Edit-Profile__Form-Row">
+				<div class="Edit-Profile__Input-Container">
+					<label for="username" class="Edit-Profile__Label">UserName</label>
+				</div>
+			<div class="Edit-Profile__Input-Container">
+					<input id="username" type="text" class="Edit-Profile__Input">
+				</div>
+			</div>
+			<div class="Edit-Profile__Form-Row">
+				<div class="Edit-Profile__Label-Container">
+					<label for="Website" class="Edit-Profile__Label">Website</label>
+				</div>
+			<div class="Edit-Profile__Input-Container">
+					<input id="Website" type="url" class="Edit-Profile__Input">
+				</div>
+			</div>
+			<div class="Edit-Profile__Form-Row">
+				<div class="Edit-Profile__Label-Container">
+					<label for="bio" class="Edit-Profile__Label">Bio</label>
+				</div>
+			<div class="Edit-Profile__Input-Container">
+					<textarea id="bio" cols="30" rows="10" class="Edit-Profile__Textarea"></textarea>
+				</div>
+			</div>
+			<div class="Edit-Profile__Form-Row">
+				<div class="Edit-Profile__Label-Container">
+					<label for="email" class="Edit-Profile__Label">E-mail</label>
+				</div>
+			<div class="Edit-Profile__Input-Container">
+					<input id="email" type="email" class="Edit-Profile__Input">
+				</div>
+			</div>
+			<div class="Edit-Profile__Form-Row">
+				<div class="Edit-Profile__Label-Container">
+					<label for="phone" class="Edit-Profile__Label">Phone</label>
+				</div>
+			<div class="Edit-Profile__Input-Container">
+					<input id="phone" type="email" class="Edit-Profile__Input">
+				</div>
+			</div>
+			<div class="Edit-Profile__Form-Row">
+				<div class="Edit-Profile__Label-Container">
+					<label for="gender" class="Edit-Profile__Label">Gender</label>
+				</div>
+			<div class="Edit-Profile__Input-Container">
+					<select id="gender" class="Edit-Profile__Input">
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						<option value="Non Selected">Non Selected</option>
+					</select>
+				</div>
+			</div>
+			<div class="Edit-Profile__Form-Row">
+				<div class="Edit-Profile__Label-Container">
+					<span class="Edit-Profile__Label">Similar Account Suggestions</span>
+				</div>
+				<div class="Edit-Profile__Input-Container">
+					<input id="similar" type="checkbox" checked />
+					<label for="similar">Include your account when recommending similar accounts people might want to follow.</label>
+					<a class="Edit-Profile__Link" href="#">[?]
+					</a>
+				</div>
+			</div>
+			<div class="Edit-Profile__Label-Container">
+				</div>
+				<div class="Edit-Profile__Input-Container">
+					<input type="submit" value="Submit" />
+					<a href="#" class="Edit-Profile__Link">Temporarily disable my account</a>
+				</div>
+			</div>
+		</form>
 		</main>
 		<footer class="Footer">
 		<nav class="Navigation">
@@ -99,7 +177,7 @@
 				</li>			
 			</ul>
 		</nav>
-		<span class="Copyright">@ 2017 instaclone</span>
+		<span class="Footer__Copyright">@ 2017 instaclone</span>
 	</footer>
 </body>
 </html>
