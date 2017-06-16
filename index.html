@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+<head>
 		<title>Instaclone Login</title>
 		<link
 		href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="root.css" />
-	</head>
+</head>
 	<body>
 		<main class="Login">
 			<div class="Login__column">
 				<img class="Login__Phone-Image" src="phoneImage/Phone-Image.png" />
 			</div>
-			<section class="Login__column">
+			<section class="Login__Column">
 				<div class="Login Section">
 					<div class="Login__Logo-Container">
 						<img class="Login__Logo" src="phoneimage/logo.png">
 					</div>
-			<form class="Login__Input" method="POST" action="feed.html">
+			 <form class="Login__Form"
+				   method="POST" 
+				   action="feed.html">
 				<input 
 					type="text"
 				 	placeholder="Username"
@@ -26,17 +28,19 @@
 				 	name="username" 
 				 	/>
 				<input
-					type="text" 
+					type="password" 
 					placeholder="Password" 
 					required
 					class="Login__Input" 
 					name="Password" 
 					/>
-				<a href="http://google.com">Forgot?</a>
+				<a class="Login__Form-Link" 
+				   href="http://google.com">Forgot?
+				</a>
 				<input 
 					type="submit"
 					value="Log in"
-					class="Login__Input Login__Input--Btn" 
+					class="Login__Input Login__Input--Blue" 
 					/>
 			</form>
 			<span class="Login__Form-Dvider">or</span>
@@ -44,20 +48,22 @@
 				<i class="fa fa-facebook-square"></i>
 			LogIn with Facebook</a>
 			</div>
-			<div class="Login Section">
+			<div class="Login__Section">
 				<span class="Login__Text">Don't you have account??</span>
 				<a href="#" class="Login__Link">Sign Up</a>
 			</div>
 			<div class="LogIn__Section Login__Section--Transparent">
-				<span class="Login__Text">Get the app</span>
+				<span class="Login__Text">Get the app
+				</span>
+			<div class="Login__App-stores">
+				<img src="phoneImage/ios.png" class="Login_Appstore" />
+				<img src="phoneImage/android.png" class="Login_Appstore" />
 			</div>
-			<div class="Login_Appstores">
-			<img src="phoneImage/ios.png" class="Login_Appstore" />
-			<img src="phoneImage/android.png" class="Login_Appstore" />
+			</div>
 			</section>	
 		</main>
 		<footer class="Footer">
-		<nav class="Navigation">
+		<nav class="Footer__Navigation">
 			<ul class="Navigation__List">
 				<li class="Navigation__Item">
 					<a href="#" class="Navigation__Link">
@@ -113,5 +119,5 @@
 		</nav>
 		<span class="Footer__Copyright">@ 2017 instaclone</span>
 	</footer>
-</body>
+	</body>
 </html>
