@@ -1,0 +1,20 @@
+.Navigation {
+	background-color: #FFFFFF;
+	border-bottom: 1px solid;
+	height: 80px;
+	padding: 0 40px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Navigation__Column {}
+
+.Navigation__Column:firstchild{
+	margin-right: auto;
+}
+
+.Navigation__Column:Lastchild {
+	justify-content: flex-end;
+}
